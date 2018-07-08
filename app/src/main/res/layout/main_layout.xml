@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/phone_1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="34dp"
+        android:text="电话："
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/phone_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="46dp"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:hint="请输入电话"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="128dp"
+        android:layout_marginTop="136dp"
+        android:text="拨打电话" />
+
+    <Button
+        android:id="@+id/button_reset1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button_call"
+        android:layout_marginEnd="16dp"
+        android:text="重置" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginBottom="235dp"
+        android:text="电话："
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/phone_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/phone_1"
+        android:layout_marginBottom="218dp"
+        android:ems="10"
+        android:hint="请输入电话"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginBottom="140dp"
+        android:text="短信："
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/sms_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/phone_1"
+        android:layout_alignTop="@+id/textview2"
+        android:ems="10"
+        android:hint="请输入短信内容"
+        android:inputType="textMultiLine"
+        android:lines="2" />
+
+    <Button
+        android:id="@+id/button_reset2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button_reset1"
+        android:layout_marginBottom="31dp"
+        android:text="重置" />
+
+    <Button
+        android:id="@+id/button_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button_reset2"
+        android:layout_marginEnd="115dp"
+        android:text="发送短信" />
+
+</RelativeLayout>
